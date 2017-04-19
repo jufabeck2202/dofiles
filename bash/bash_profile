@@ -1,0 +1,80 @@
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
+
+
+
+export ANDROID_HOME=${HOME}/Documents/Programming/android-sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+alias cp='cp -iv'
+alias ll='ls -FGlAhp'
+alias less='less -FSRXc'
+
+alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+alias ..='cd ../'                           # Go back 1 directory level
+alias ...='cd ../../'                       # Go back 2 directory levels
+alias .3='cd ../../../'                     # Go back 3 directory levels
+alias .4='cd ../../../../'                  # Go back 4 directory levels
+alias .5='cd ../../../../../'               # Go back 5 directory levels
+alias .6='cd ../../../../../../'            # Go back 6 directory levels
+alias edit='atom'
+alias f='open -a Finder ./'
+alias path='echo -e ${PATH//:/\\n}'
+alias pgr='cd /Users/julianbeck/Documents/Programming'
+
+
+
+
+
+
+#commandline git
+# get current branch in git repo
+function parse_git_branch() {
+    BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+    if [ ! "${BRANCH}" == "" ]
+    then
+        STAT=`parse_git_dirty`
+        echo "[${BRANCH}${STAT}]"
+    else
+        echo ""
+    fi
+}
+
+# get current status of git repo
+function parse_git_dirty {
+    status=`git status 2>&1 | tee`
+    dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
+    untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
+    ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
+    newfile=`echo -n "${status}" 2> /dev/null | grep "new file:" &> /dev/null; echo "$?"`
+    renamed=`echo -n "${status}" 2> /dev/null | grep "renamed:" &> /dev/null; echo "$?"`
+    deleted=`echo -n "${status}" 2> /dev/null | grep "deleted:" &> /dev/null; echo "$?"`
+    bits=''
+    if [ "${renamed}" == "0" ]; then
+        bits=">${bits}"
+    fi
+    if [ "${ahead}" == "0" ]; then
+        bits="*${bits}"
+    fi
+    if [ "${newfile}" == "0" ]; then
+        bits="+${bits}"
+    fi
+    if [ "${untracked}" == "0" ]; then
+        bits="?${bits}"
+    fi
+    if [ "${deleted}" == "0" ]; then
+        bits="x${bits}"
+    fi
+    if [ "${dirty}" == "0" ]; then
+        bits="!${bits}"
+    fi
+    if [ ! "${bits}" == "" ]; then
+        echo " ${bits}"
+    else
+        echo ""
+    fi
+}
