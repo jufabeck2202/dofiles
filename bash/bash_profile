@@ -30,6 +30,7 @@ alias f='open -a Finder ./'
 alias path='echo -e ${PATH//:/\\n}'
 alias pgr='cd /Users/julianbeck/Documents/Programming'
 alias sdk='cd /Users/julianbeck/Documents/Programming/android-sdk/'
+alias ipc='ipconfig getifaddr en0 | pbcopy' #copys ip adress to clipboard
 
 
 
