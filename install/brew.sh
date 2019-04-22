@@ -44,6 +44,7 @@ brew cask install logitech-options
 brew cask install flux
 brew cask install clipy
 brew cask install jdownloader
+brew cask install fing
 
 
 
