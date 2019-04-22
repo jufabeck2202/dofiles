@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+code-insiders --install-extension aaron-bond.better-comments
+code-insiders --install-extension austin.code-gnu-global
+code-insiders --install-extension chenxsan.vscode-standardjs
+code-insiders --install-extension christian-kohler.npm-intellisense
+code-insiders --install-extension CoenraadS.bracket-pair-colorizer
+code-insiders --install-extension dbaeumer.jshint
+code-insiders --install-extension dbaeumer.vscode-eslint
+code-insiders --install-extension eamodio.gitlens
+code-insiders --install-extension eg2.vscode-npm-script
+code-insiders --install-extension Equinusocio.vsc-material-theme
+code-insiders --install-extension esbenp.prettier-vscode
+code-insiders --install-extension hollowtree.vue-snippets
+code-insiders --install-extension HookyQR.beautify
+code-insiders --install-extension icetea78.wrl
+code-insiders --install-extension James-Yu.latex-workshop
+code-insiders --install-extension JuanBlanco.solidity
+code-insiders --install-extension karyfoundation.comment
+code-insiders --install-extension mikestead.dotenv
+code-insiders --install-extension mitaki28.vscode-clang
+code-insiders --install-extension MS-CEINTL.vscode-language-pack-de
+code-insiders --install-extension ms-python.python
+code-insiders --install-extension ms-vscode.cpptools
+code-insiders --install-extension ms-vsliveshare.vsliveshare
+code-insiders --install-extension numso.prettier-standard-vscode
+code-insiders --install-extension nwhatt.chai-snippets
+code-insiders --install-extension octref.vetur
+code-insiders --install-extension PeterJausovec.vscode-docker
+code-insiders --install-extension PKief.material-icon-theme
+code-insiders --install-extension rafaelmaiolla.remote-vscode
+code-insiders --install-extension sgryjp.japanese-word-handler
+code-insiders --install-extension spoonscen.es6-mocha-snippets
+code-insiders --install-extension vsciot-vscode.vscode-arduino
+code-insiders --install-extension WallabyJs.quokka-vscode
+code-insiders --install-extension xabikos.JavaScriptSnippets
+code-insiders --install-extension zhuangtongfa.Material-theme
