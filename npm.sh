@@ -1,5 +1,4 @@
 # working with npm
-npm install -g yarn
 npm install -g np
 npm install -g npm-name-cli
 
@@ -7,6 +6,12 @@ npm install -g npm-name-cli
 npm install -g ndb
 npm install -g node-inspector
 npm install -g nodemon
+npm install -g @electron-forge/cli
+npm install -g electron-packager
+npm install -g firebase-tool
+npm install -g ffbinaries
+npm install -g typescript
+
 
 # general utilities
 npm install -g now
@@ -15,6 +20,18 @@ npm install -g spoof
 npm install -g vtop
 npm install -g vitomuci
 npm install -g yo
+npm install -g pm2
+npm install -g localtunnel
+npm install -g svg-term-cl
+npm install -g homebridge
+npm install -g @vue/cli
+
+
+# my utilities
+npm install -g hskafreeroom
+npm install -g srt-to-anki
+npm install -g vitomuci
+
 
 # react
 npm install -g create-react-app
