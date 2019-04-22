@@ -17,7 +17,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias cp='cp -iv'
 alias ll='ls -FGlAhp'
 alias less='less -FSRXc'
-
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels

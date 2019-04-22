@@ -34,3 +34,7 @@ curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-co
 
 # Run the Homebrew Script
 ./brew.sh
+
+git config --global user.name "Julian Beck"
+git config --global user.email "ju-fa-beck@t-online.de"
+git config --global merge.tool code-insiders

@@ -1,41 +1,41 @@
 #!/usr/bin/env bash
 
 # working with npm
-npm install -g np
-npm install -g npm-name-cli
+yarn global add np
+yarn global add npm-name-cli
 
 # debugging
-npm install -g ndb
-npm install -g node-inspector
-npm install -g nodemon
-npm install -g @electron-forge/cli
-npm install -g electron-packager
-npm install -g firebase-tool
-npm install -g ffbinaries
-npm install -g typescript
+yarn global add ndb
+yarn global add node-inspector
+yarn global add nodemon
+yarn global add @electron-forge/cli
+yarn global add electron-packager
+yarn global add firebase-tool
+yarn global add ffbinaries
+yarn global add typescript
 
 
 # general utilities
-npm install -g now
-npm install -g heroku
-npm install -g spoof
-npm install -g vtop
-npm install -g vitomuci
-npm install -g yo
-npm install -g pm2
-npm install -g localtunnel
-npm install -g svg-term-cl
-npm install -g homebridge
-npm install -g @vue/cli
+yarn global add now
+yarn global add heroku
+yarn global add spoof
+yarn global add vtop
+yarn global add vitomuci
+yarn global add yo
+yarn global add pm2
+yarn global add localtunnel
+yarn global add svg-term-cl
+yarn global add homebridge
+yarn global add @vue/cli
 
 
 # my utilities
-npm install -g hskafreeroom
-npm install -g srt-to-anki
-npm install -g vitomuci
+yarn global add hskafreeroom
+yarn global add srt-to-anki
+yarn global add vitomuci
 
 
 # react
-npm install -g create-react-app
-npm install -g react-native-cli
+yarn global add create-react-app
+yarn global add react-native-cli
 
