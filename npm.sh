@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # working with npm
 npm install -g np
 npm install -g npm-name-cli
