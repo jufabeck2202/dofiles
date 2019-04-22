@@ -13,10 +13,11 @@ fi
 homedir=$1
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
+dotfiledir=${homedir}/dotfiles/dot
+installdir=${homedir}/dotfiles/install
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc bash_prompt aliases private"
+files="bash_profile bashrc bash_prompt aliases .gitconfig .hyper.js .gitignore_global"
 bashFiles
 
 # change to the dotfiles directory
@@ -34,9 +35,9 @@ done
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash
 
 # Run the Homebrew Script
-./brew.sh
+./${installdir}/brew.sh
+./${installdir}/node.sh
+./${installdir}/code-extensions.sh
+./${installdir}/mac.sh
 
-git config --global user.name "Julian Beck"
-git config --global user.email "ju-fa-beck@t-online.de"
-git config --global merge.tool code-insiders
-git config --global core.excludesfile ~/.gitignore
+
