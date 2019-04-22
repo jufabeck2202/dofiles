@@ -1,0 +1,9 @@
+[user]
+  name = Julian Beck
+  email = ju-fa-beck@t-online.de
+
+[github]
+  user = jufabeck2202
+
+[core]
+  excludesfile = ~/.gitignore_global
