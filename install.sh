@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 ############################
-# This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
-# And also installs Homebrew Packages
-# And sets Sublime preferences
+# This script creates symlinks from the home directory to any desired dotfiles in $HOME/dotfiles
+# And also installs all required Packages
 ############################
 
 
@@ -28,7 +27,7 @@ done
 # Download Git Auto-Completion
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > $HOME/.git-completion.bash
 
-# Run the Homebrew Script
+# Run the Install Script
 ${installdir}/brew.sh
 ${installdir}/node.sh
 ${installdir}/code-extensions.sh

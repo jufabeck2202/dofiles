@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Install global node packages using yarn
 
 # working with npm
 yarn global add np
@@ -33,6 +34,7 @@ yarn global add @vue/cli
 yarn global add hskafreeroom
 yarn global add srt-to-anki
 yarn global add vitomuci
+yarn global add ciconcat
 
 
 # react

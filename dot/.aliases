@@ -2,7 +2,6 @@
 alias cp='cp -iv'
 alias ll='ls -FGlAhp'
 alias less='less -FSRXc'
-#alias |&='2>&1|'
 
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
@@ -11,17 +10,19 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
+
+#Open finder in currend dir
 alias f='open -a Finder ./'
 
 alias path='echo -e ${PATH//:/\\n}'
 
 #directories
 alias pgr='cd /Users/julianbeck/Documents/Programming'
-alias work='cd "/Users/julianbeck/Google Drive/Dokumente/College/Workspace/"'
+alias work='cd "/Users/julianbeck/Google Drive/Dokumente/College/"'
 alias sdk='cd /Users/julianbeck/Documents/Programming/android-sdk/'
 
-alias ipc='ipconfig getifaddr en0 | tr -d '\n' | pbcopy' #copys ip adress to clipboard and removes new line
-alias bashp='code-insiders .bash_profile'
+#copys ip adress to clipboard and removes new line
+alias ipc='ipconfig getifaddr en0 | tr -d '\n' | pbcopy' 
 alias pub='cat ~/.ssh/id_rsa.pub'
 
 alias edit='code-insiders'
@@ -30,7 +31,7 @@ alias sMongo='mongod --config /usr/local/etc/mongod.conf'
 
 alias ch='history | grep "git commit"'
 alias hg='history | grep'
-alias aliases='cat ~/dotfiles/dot/.aliases'
+alias aliases='bat -l bash ~/dotfiles/dot/.aliases'
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#Install all important Code extensions
 code-insiders --install-extension aaron-bond.better-comments
 code-insiders --install-extension austin.code-gnu-global
 code-insiders --install-extension chenxsan.vscode-standardjs
