@@ -15,8 +15,7 @@ fi
 # PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 # export PATH
 export GOPATH=/Users/julianbeck/Documents/Programming/GoWorkspace
-DOTFILES_EXPORT="$HOME/dotfiles/bin"
-export PATH="$DOTFILES_EXPORT"
+export PATH="$PATH:$HOME/dotfiles/bin"
 
 
 

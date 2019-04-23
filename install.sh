@@ -5,20 +5,14 @@
 # And sets Sublime preferences
 ############################
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: install.sh <home_directory>"
-    exit 1
-fi
 
-homedir=$1
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles/dot
-installdir=${homedir}/dotfiles/install
+dotfiledir=$HOME/dotfiles/dot
+installdir=$HOME/dotfiles/install
 
 # list of files/folders to symlink in ${homedir}
 files="bash_profile bashrc bash_prompt aliases .gitconfig .hyper.js .gitignore_global"
-bashFiles
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -28,16 +22,16 @@ echo "...done"
 # create symlinks (will overwrite old dotfiles)
 for file in ${files}; do
     echo "Creating symlink to $file in home directory."
-    ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
+    ln -sf ${dotfiledir}/.${file} $HOME/.${file}
 done
 
 # Download Git Auto-Completion
-curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash
+curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > $HOME/.git-completion.bash
 
 # Run the Homebrew Script
-./${installdir}/brew.sh
-./${installdir}/node.sh
-./${installdir}/code-extensions.sh
-./${installdir}/mac.sh
+${installdir}/brew.sh
+${installdir}/node.sh
+${installdir}/code-extensions.sh
+${installdir}/mac.sh
 
 
