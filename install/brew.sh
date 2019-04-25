@@ -19,6 +19,7 @@ brew install yarn
 brew install youtube-dl
 brew install asciinema
 brew install autossh
+brew install httpie
 
 
 # Install MacOS Applications
