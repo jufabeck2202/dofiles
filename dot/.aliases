@@ -58,4 +58,5 @@ export LSCOLORS='Gxfxcxdxbxegedabagacad'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias keys = 'for key in ~/.ssh/id_*; do ssh-keygen -l -f "${key}"; done | uniq'
 
