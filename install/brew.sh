@@ -20,6 +20,7 @@ brew install youtube-dl
 brew install asciinema
 brew install autossh
 brew install httpie
+brew install thefuck
 
 
 # Install MacOS Applications
