@@ -35,3 +35,4 @@ code-insiders --install-extension vsciot-vscode.vscode-arduino
 code-insiders --install-extension WallabyJs.quokka-vscode
 code-insiders --install-extension xabikos.JavaScriptSnippets
 code-insiders --install-extension zhuangtongfa.Material-theme
+code-insiders --install-extension teabyii.ayu

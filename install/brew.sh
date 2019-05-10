@@ -70,7 +70,6 @@ brew cask install --appdir="/Applications" anki
 brew cask install --appdir="/Applications" hyper
 brew cask install --appdir="/Applications" ngrok
 brew cast install --appdir="/Applications" rescuetime
-brew cast install --appdir="/Applications" dashlane
 brew cask install --appdir="/Applications" docker
 brew caks install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" logitech-options
@@ -93,3 +92,4 @@ mas install 497799835 # XCode
 mas install 457622435 # yoink
 mas install 824183456 # affinity
 mas install 824171161 # designer
+mas install 552383089 # dashlane
