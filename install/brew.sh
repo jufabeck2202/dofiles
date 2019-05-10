@@ -37,6 +37,7 @@ brew install telnet
 brew install nmap
 brew install ffmpeg
 brew install openssl
+brew install cloc
 brew install yarn
 brew install youtube-dl
 brew install asciinema
@@ -47,6 +48,10 @@ brew install tmux
 brew install ranger
 brew install dns2tcp
 brew install wget
+brew install imagemagick
+brew install ag
+
+
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
