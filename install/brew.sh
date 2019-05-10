@@ -25,8 +25,8 @@ brew install tmux
 brew install ranger
 brew install dns2tcp
 brew install wget
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
 
+# Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
 brew install bfg
 brew install binutils
@@ -93,3 +93,4 @@ mas install 457622435 # yoink
 mas install 824183456 # affinity
 mas install 824171161 # designer
 mas install 552383089 # dashlane
+mas 'The Unarchiver', id: 425424353
