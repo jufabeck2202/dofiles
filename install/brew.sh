@@ -1,5 +1,27 @@
 #!/usr/bin/env bash
 
+info() {
+	printf "\033[00;34m$@\033[0m\n"
+}
+
+update() {
+	# Install Homebrew or make sure it's up to date.
+	which -s brew
+	if [[ $? != 0 ]] ; then
+		info "Installing"
+		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	else
+		info "Updating"
+		brew update
+		brew upgrade
+	fi
+
+	# Disable analytics.
+	brew analytics off
+}
+
+update
+
 # Install Brew Packages
 brew install python
 brew install tree
