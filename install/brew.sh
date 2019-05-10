@@ -77,6 +77,7 @@ brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" clipy
 brew cask install --appdir="/Applications" jdownloader
 brew cask install --appdir="/Applications" fing
+
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 
