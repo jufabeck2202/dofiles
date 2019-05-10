@@ -2,6 +2,7 @@
 alias cp='cp -iv'
 alias ll='ls -FGlAhp'
 alias less='less -FSRXc'
+eval $(thefuck --alias)
 
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
