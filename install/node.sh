@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 #Install global node packages using yarn
 
 # working with npm
