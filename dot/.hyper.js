@@ -9,7 +9,7 @@ module.exports = {
           "ip",                                                                    
           "cpu",                                                                   
           "network",
-          "memory"                                                                
+          "memory"                                                              
         ]                                                                          
       },
       hyperStatusLine: {
@@ -153,6 +153,7 @@ module.exports = {
     //hyper-tabs-enhanced
     plugins: [
       "gitrocket",
+      'space-pull',
       "hyper-statusline"
     
       ],
