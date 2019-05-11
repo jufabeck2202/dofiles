@@ -153,9 +153,7 @@ module.exports = {
     //hyper-tabs-enhanced
     plugins: [
       "gitrocket",
-      'space-pull',
       "hyper-statusline"
-    
       ],
   
     // in development, you can create a directory under

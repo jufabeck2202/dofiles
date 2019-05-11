@@ -1,0 +1,12 @@
+#!/bin/bash
+NETWORK=$(fing -r 1)
+#grepIP
+IPDubs=$(echo "$NETWORK" | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}')
+#Remove dubs
+IP=$(echo "$IPDubs" | sort -u) 
+#scanports
+PORT80OPEN=$(echo "$IP" | xargs nmap -p80 --open | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}')
+#openInchrome
+while read line; do
+    /usr/bin/open -a "/Applications/Google Chrome.app" "http://$line"
+done < <(echo "$PORT80OPEN")

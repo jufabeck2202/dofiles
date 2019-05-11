@@ -14,6 +14,7 @@ yarn global add electron-packager
 yarn global add firebase-tool
 yarn global add ffbinaries
 yarn global add typescript
+yarn global add jshint
 
 
 # general utilities
