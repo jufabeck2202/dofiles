@@ -13,7 +13,9 @@ link: ##link all dotfiles
 
 .PHONY: install
 
-.PHONY: install node
+.PHONY: node
+node: ##install all global node packages using yarn
+	~/dotfiles/install/node.sh
 
 .PHONY: help
 help:
