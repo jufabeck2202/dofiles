@@ -9,44 +9,17 @@ apt-get install -y docker-compose
 
 # Essentials
 sudo apt install -y \
-    afl \
-    arc-theme \
     build-essential \
     curl \
-    doxygen \
-    dtrx \
-    exuberant-ctags \
-    ffmpeg \
-    fish \
-    gdb \
     git \
-    gnupg \
-    gparted \
-    graphviz \
     htop \
-    lcov \
-    lldb \
-    lm-sensors \
-    nasm \
-    neofetch \
-    nfs-common \
     nodejs \
     npm \
     python \
     python-pip \
     ranger \
-    re2c \
-    scrot \
-    shellcheck \
-    silversearcher-ag \
-    tig \
-    tig \
-    tmux \
     tree \
     unrar \
-    vbindiff \
-    weechat-curses weechat-plugins \
-    xz-utils
 
 # Pass any argument to this script for a "full" install
 if [ -n "$1" ]; then
