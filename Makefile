@@ -1,9 +1,9 @@
-.PHONY: all
-all:  ## Installs all Programms, links all dotfiles, setup complete dev env.
+.PHONY: mac-all
+mac-all:  ## setup complete mac env.
 	echo "test"
 
 .PHONY: link
-link: ##link all dotfiles
+link: ## link only dotfiles
 	#make link
 	@for file in $(shell find ~/dotfiles/dot); \
 	do \
@@ -11,10 +11,17 @@ link: ##link all dotfiles
 		ln -sf $$file $(HOME)/$${file##*/}; \
 	done
 
-.PHONY: install
+.PHONY: ubuntu-all
+ubuntu-all: ## setup complemte ubuntu env.
+
+.PHONY: ubuntu-ess
+ubuntu-ess:
+
+
+
 
 .PHONY: node
-node: ##install all global node packages using yarn
+node: ## install all global node packages using yarn
 	~/dotfiles/install/node.sh
 
 .PHONY: help
