@@ -50,6 +50,7 @@ brew install dns2tcp
 brew install wget
 brew install imagemagick
 brew install ag
+brew install mas
 
 
 
@@ -60,7 +61,6 @@ brew install binutils
 brew install binwalk
 brew install cifer
 brew install dex2jar
-brew install dns2tcp
 brew install fcrackzip
 brew install foremost
 brew install hashpump
@@ -77,7 +77,6 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install homebrew/x11/xpdf
 brew install xz
-brew install mas
 
 
 # Install MacOS Applications
