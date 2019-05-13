@@ -5,7 +5,7 @@ sudo apt upgrade
 #install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh | sh -
 apt-get install -y docker-compose
-
+rm get-docker.sh
 
 # Essentials for development
 sudo apt install -y \
