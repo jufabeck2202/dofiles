@@ -23,6 +23,10 @@ sudo apt install -y \
     hub \
     tmux \
     openssh-server \
+# add yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get -y install yarn
 
 # Pass any argument to this script for a "full" install
 # Installes useful command applications
@@ -49,8 +53,9 @@ if [ "$1" = "full" ]; then
         network-manager-openvpn-gnome
 
     # install Jdownloader
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6A68F637 
-    sudo apt-get install -y jdownloader-installer 
+    wget http://installer.jdownloader.org/JD2Setup_x64.sh
+    chmod +x JD2Setup_x64.sh
+    ./JD2Setup_x64.sh 
 
     # remote Desktop
     sudo add-apt-repository ppa:x2go/stable
