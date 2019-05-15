@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 sudo apt update
-sudo apt upgrade
+sudo apt -y upgrade
 
 #install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh | sh -
@@ -26,7 +26,9 @@ sudo apt install -y \
 # add yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get -y install yarn
+sudo apt -y update
+sudo apt install yarn nodejs
+
 
 # Pass any argument to this script for a "full" install
 # Installes useful command applications
