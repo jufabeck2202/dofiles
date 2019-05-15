@@ -24,6 +24,7 @@ sudo apt install -y \
     tmux \
     openssh-server \
     thefuck\
+    ethtool\
 # add yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -61,9 +62,8 @@ if [ "$1" = "full" ]; then
     ./JD2Setup_x64.sh 
 
     # remote Desktop
-    sudo add-apt-repository ppa:x2go/stable
-    sudo apt-get update
-    sudo apt-get install -y x2goserver x2goserver-xsession
+    sudo apt install -y xrdp
+    sudo systemctl enable xrdp  
 fi
 
 # Cleanup
