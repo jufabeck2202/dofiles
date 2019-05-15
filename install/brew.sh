@@ -51,6 +51,7 @@ brew install wget
 brew install imagemagick
 brew install ag
 brew install mas
+brew install wakeonlan
 
 
 
