@@ -3,6 +3,7 @@
 alias dm='docker-machine'
 alias dmx='docker-machine ssh'
 alias dk='docker'
+alias dkc='docker-compose'
 alias dki='docker images'
 alias dks='docker service'
 alias dkrm='docker rm'
