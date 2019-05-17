@@ -151,10 +151,7 @@ module.exports = {
     //   `project#1.0.1`
     //"hyperline",
     //hyper-tabs-enhanced
-    plugins: [
-      "gitrocket",
-      "hyper-statusline"
-      ],
+    plugins: ["gitrocket", "hyper-statusline", "hyperterm-paste"],
   
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here

@@ -3,9 +3,7 @@ sudo apt update
 sudo apt -y upgrade
 
 #install Docker
-curl -fsSL https://get.docker.com -o get-docker.sh | sh -
-apt-get install -y docker-compose
-rm get-docker.sh
+curl -sSL "https://gist.githubusercontent.com/jaymoulin/e749a189511cd965f45919f2f99e45f3/raw/0e650b38fde684c4ac534b254099d6d5543375f1/ARM%2520(Raspberry%2520PI)%2520Docker%2520Install" | sudo sh && sudo usermod -aG docker $USER
 
 # Essentials for development
 sudo apt install -y \
@@ -13,8 +11,6 @@ sudo apt install -y \
     curl \
     git \
     htop \
-    nodejs \
-    npm \
     python \
     python-pip \
     ranger \
@@ -29,7 +25,7 @@ sudo apt install -y \
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt -y update
-sudo apt install yarn nodejs
+sudo apt install -y yarn nodejs npm
 
 
 # Pass any argument to this script for a "full" install

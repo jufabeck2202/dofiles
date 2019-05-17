@@ -1,7 +1,7 @@
 # Simplified dotfile for video recordings
 
-# Load dotfiles:
-for file in ~/.{bash_prompt,aliases}; do
+# Load alias files:
+for file in ~/.{bash_prompt,aliases,docker-aliases}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
