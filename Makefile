@@ -31,6 +31,7 @@ link: ## link only dotfiles
 		echo "Creating symlink to $$file in home directory."; \
 		ln -sfn $$file $(HOME)/$${file##*/}; \
 	done
+	@rm $(HOME)/dot
 
 .PHONY: node
 node: ## install all global node packages using yarn

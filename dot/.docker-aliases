@@ -19,7 +19,7 @@ dkln() {
 
 dkp() {
   if [ ! -f .dockerignore ]; then
-    echo "Warning, .dockerignore file is missing."
+    echo "Warning, .dockerignore file is missing." 
     read -p "Proceed anyway?"
   fi
 
