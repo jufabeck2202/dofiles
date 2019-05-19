@@ -9,6 +9,7 @@ update() {
 	which -s brew
 	if [[ $? != 0 ]] ; then
 		info "Installing"
+		xcode-select --install
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	else
 		info "Updating"
@@ -23,6 +24,7 @@ update() {
 update
 
 # Install Brew Packages
+brew install cask
 brew install python
 brew install tree
 brew install node
