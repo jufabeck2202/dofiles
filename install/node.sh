@@ -35,7 +35,7 @@ npm install -g @vue/cli
 npm install -g hskafreeroom
 npm install -g srt-to-anki
 npm install -g vitomuci
-npm install -g ciconcat
+npm install -g cliconcat
 
 
 # react
