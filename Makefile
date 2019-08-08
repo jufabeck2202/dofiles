@@ -1,5 +1,5 @@
 .PHONY: mac-all
-mac-all: link mac-brew mac-config node code-extensions  ## setup complete mac environment
+mac-all: link mac-brew mac-config node code-extensions mac-mas  ## setup complete mac environment
 
 .PHONY: mac-config
 mac-config: ## change mac default settings
@@ -8,6 +8,10 @@ mac-config: ## change mac default settings
 .PHONY: mac-brew
 mac-brew: ## install all brew packages 
 	$$HOME/dotfiles/install/brew.sh
+
+.PHONY: mac-mas
+mac-brew: ## install all brew packages 
+	$$HOME/dotfiles/install/mas.sh
 
 .PHONY: ubuntu-all
 ubuntu-all: link ubuntu-apt-full node## setup complemte ubuntu environment
