@@ -10,7 +10,7 @@ mac-brew: ## install all brew packages
 	$$HOME/dotfiles/install/brew.sh
 
 .PHONY: mac-mas
-mac-brew: ## install all brew packages 
+mac-mas: ## install all brew packages 
 	$$HOME/dotfiles/install/mas.sh
 
 .PHONY: ubuntu-all
