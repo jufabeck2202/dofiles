@@ -14,7 +14,7 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 #Open finder in currend dir
 alias f='open -a Finder ./'
-
+alias jn='jupyter notebook'
 alias path='echo -e ${PATH//:/\\n}'
 
 #directories

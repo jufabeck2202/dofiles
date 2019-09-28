@@ -4,17 +4,6 @@
 
 module.exports = {
     config: {
-      hyperline: {                                                                 
-        plugins: [                                                                 
-          "ip",                                                                    
-          "cpu",                                                                   
-          "network",
-          "memory"                                                              
-        ]                                                                          
-      },
-      hyperStatusLine: {
-        dirtyColor: 'salmon',
-      },
   
       // choose either `'stable'` for receiving highly polished,
       // or `'canary'` for less polished but more frequent updates
@@ -141,6 +130,9 @@ module.exports = {
       // bellSoundURL: 'http://example.com/bell.mp3',
   
       // for advanced config flags please refer to https://hyper.is/#cfg
+      hypercwd: {
+        initialWorkingDirectory: '~/'
+      }
     },
   
     // a list of plugins to fetch and install from npm
@@ -151,7 +143,7 @@ module.exports = {
     //   `project#1.0.1`
     //"hyperline",
     //hyper-tabs-enhanced
-    plugins: ["gitrocket", "hyper-statusline", "hyperterm-paste"],
+    plugins: ["gitrocket","hypercwd", "hyper-statusline", "hyperterm-paste"],
   
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
