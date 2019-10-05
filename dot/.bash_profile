@@ -1,5 +1,4 @@
-# Simplified dotfile for video recordings
-
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 # Load alias files:
 for file in ~/.{bash_prompt,aliases,docker-aliases}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
