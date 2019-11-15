@@ -54,3 +54,6 @@ unset __conda_setup
 eval "$(pipenv --completion)"
 eval "$(pyenv init - --no-rehash)"
 
+export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="$PATH:/Users/julianbeck/Documents/Programming/flutter/sdk/flutter/bin"
+clear
