@@ -1,1 +1,5 @@
 # dofiles
+Usage:
+```
+make help
+```
