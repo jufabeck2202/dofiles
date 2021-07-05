@@ -54,7 +54,12 @@ unset __conda_setup
 eval "$(pipenv --completion)"
 eval "$(pyenv init - --no-rehash)"
 
-export PATH="$HOME/.fastlane/bin/fastlane_lib:$PATH
+export PATH="$HOME/.fastlane/bin/fastlane_lib:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="$PATH:/Users/julianbeck/Documents/Programming/flutter/sdk/flutter/bin"
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Users/julianbeck/Documents/Programming/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
 clear
+
